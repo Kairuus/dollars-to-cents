@@ -1,0 +1,387 @@
+.back{
+  width: 100%;
+  height: 100vh;
+}
+
+header{
+  width: 100%;
+  height: 150px;
+  background: url('../assets/wood.png');
+  border: 8px solid white;
+  margin: 50px auto;
+  padding: 5px;
+  position: relative;
+
+  h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+#dollar-1{
+  width: 100px;
+  position: absolute;
+  left: -40px;
+  top: -60px;
+}
+
+#dollar-2{
+  width: 100px;
+  position: absolute;
+  left: -40px;
+  top: -20px;
+}
+
+
+#dollar-3{
+  width: 100px;
+  position: absolute;
+  transform: rotateY(180deg);
+  right: -40px;
+  top: -60px;
+}
+
+#dollar-4{
+  width: 100px;
+  position: absolute;
+  transform: rotateY(180deg);
+  right: -40px;
+  top: -20px;
+}
+
+#cents-1{
+  width: 100px;
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+}
+
+#cents-2{
+  width: 100px;
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+}
+
+.container{
+  width: 100;
+  height: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 8px solid white;
+  background: url('../assets/wood.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  h2{
+    color: white;
+    font-size: 40px;
+  }
+
+}
+
+#clearBtn{
+  position: absolute;
+  top: 335px;
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700  ;
+  outline: 0;
+  border: 2px solid white;
+  cursor: pointer;
+
+  &:active{
+    width: 38px;
+    height: 28px;
+    font-size: 18px;
+    background-color: #ccc;
+  }
+}
+
+.title{
+  padding: 5px 20px;
+  border: 5px solid white;
+  text-align: center;
+}
+
+.dollars-cents{
+  display: flex;
+
+}
+
+.dollar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input{
+    margin: 0 40px;
+    outline: 0;
+
+    &:focus{
+      border: 4px solid black;
+    }
+
+    &::-webkit-inner-spin-button{
+      display: none;
+    }
+  }
+
+
+  p{
+    font-size: 20px;
+    color: white;
+  }
+}
+
+input{
+  width: 70%;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.coins{
+  display: flex;
+}
+
+.coin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input{
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    margin: 0 40px;
+  }
+
+  p{
+    font-size: 20px;
+    color: white;
+  }
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    font-size: 50px;
+    margin: 0 30px;
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+      text-shadow: 0 0 5px white;
+    }
+  }
+}
+@media screen and (min-width: 64em){
+
+  .back{
+    width: 100%;
+    height: 100vh;
+  }
+
+  header{
+    width: 60%;
+    height: 150px;
+    background: url('../assets/wood.png');
+    border: 8px solid white;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+
+    h1{
+      color: white;
+      font-size: 80px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+  }
+
+  #dollar-1{
+    width: 150px;
+    position: absolute;
+    left: -50px;
+    top: -60px;
+  }
+
+  #dollar-2{
+    width: 150px;
+    position: absolute;
+    left: -90px;
+    top: -40px;
+  }
+
+
+  #dollar-3{
+    width: 150px;
+    position: absolute;
+    transform: rotateY(180deg);
+    right: -50px;
+    top: -60px;
+  }
+
+  #dollar-4{
+    width: 150px;
+    position: absolute;
+    transform: rotateY(180deg);
+    right: -90px;
+    top: -40px;
+  }
+
+  #cents-1{
+    width: 150px;
+    position: absolute;
+    left: -40px;
+    bottom: -20px;
+  }
+
+  #cents-2{
+    width: 150px;
+    position: absolute;
+    right: -40px;
+    bottom: -20px;
+  }
+
+  .container{
+    width: 75%;
+    height: 500px;
+    margin: 0 auto;
+    border: 8px solid white;
+    background: url('../assets/wood.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    h2{
+      color: white;
+      font-size: 40px;
+    }
+
+  }
+
+  #clearBtn{
+    position: absolute;
+    top: 275px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700  ;
+    outline: 0;
+    border: 2px solid white;
+    cursor: pointer;
+
+    &:active{
+      width: 48px;
+      height: 28px;
+      font-size: 18px;
+    }
+  }
+
+  .title{
+    padding: 5px 20px;
+    border: 5px solid white;
+  }
+
+  .dollars-cents{
+    display: flex;
+
+  }
+
+  .dollar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input{
+      margin: 0 40px;
+      outline: 0;
+
+      &:focus{
+        border: 4px solid black;
+      }
+
+      &::-webkit-inner-spin-button{
+        display: none;
+      }
+    }
+
+
+    p{
+      font-size: 35px;
+      color: white;
+    }
+  }
+
+  input{
+    width: 70%;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .coins{
+    display: flex;
+  }
+
+  .coin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input{
+      cursor: pointer;
+      outline: 0;
+      border: 0;
+      margin: 0 40px;
+    }
+
+    p{
+      font-size: 35px;
+      color: white;
+    }
+  }
+
+  footer{
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+      font-size: 50px;
+      margin: 0 30px;
+      color: white;
+      text-decoration: none;
+
+      &:hover{
+        text-shadow: 0 0 5px white;
+      }
+    }
+  }
+}
+
+
+
